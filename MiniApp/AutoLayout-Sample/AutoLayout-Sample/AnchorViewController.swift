@@ -32,8 +32,7 @@ class AnchorViewController: UIViewController {
     }
 
     private func setupHeaderViewLayout() {
-        headerViewHeightConstraint = headerView.heightAnchor.constraint(
-            equalTo: view.heightAnchor, multiplier: 0.3)
+        headerViewHeightConstraint = headerView.heightAnchor.constraint(equalToConstant: 0)
         headerViewTopConstraint = headerView.topAnchor.constraint(equalTo: view.topAnchor)
         NSLayoutConstraint.activate([
             headerViewHeightConstraint,
@@ -44,8 +43,7 @@ class AnchorViewController: UIViewController {
     }
 
     private func setupBodyViewLayout() {
-        bodyViewHeightConstraint = bodyView.heightAnchor.constraint(
-            equalTo: view.heightAnchor, multiplier: 0.7)
+        bodyViewHeightConstraint = bodyView.heightAnchor.constraint(equalToConstant: 0)
         NSLayoutConstraint.activate([
             bodyViewHeightConstraint,
             bodyView.topAnchor.constraint(equalTo: headerView.bottomAnchor),
@@ -68,9 +66,10 @@ class AnchorViewController: UIViewController {
     }
 
     private func updateConstraints(safeAreaInsets: UIEdgeInsets) {
-        headerViewHeightConstraint.constant = -safeAreaInsets.top
+        let viewHeight = view.bounds.height - safeAreaInsets.top - safeAreaInsets.bottom
+        headerViewHeightConstraint.constant = viewHeight * 0.3
         headerViewTopConstraint.constant = safeAreaInsets.top
-        bodyViewHeightConstraint.constant = -safeAreaInsets.bottom
+        bodyViewHeightConstraint.constant = viewHeight * 0.7
         view.setNeedsLayout()
     }
 }
