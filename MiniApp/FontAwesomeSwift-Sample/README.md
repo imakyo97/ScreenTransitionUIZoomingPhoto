@@ -1,0 +1,1 @@
+[GitHub-FontAwesome.swift](https://github.com/thii/FontAwesome.swift)
