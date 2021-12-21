@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FontAwesomeSwift_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oer-tF-ii3">
+                                <rect key="frame" x="186" y="144" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q17-rs-FJA">
+                                <rect key="frame" x="186" y="286" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4q-aI-NsE">
+                                <rect key="frame" x="186" y="357" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJ9-9a-gwf">
+                                <rect key="frame" x="186" y="215" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="q17-rs-FJA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Aj6-Y1-Y2I"/>
+                            <constraint firstItem="q17-rs-FJA" firstAttribute="top" secondItem="cJ9-9a-gwf" secondAttribute="bottom" constant="50" id="PLW-AW-Sno"/>
+                            <constraint firstItem="cJ9-9a-gwf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WZd-af-toX"/>
+                            <constraint firstItem="oer-tF-ii3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="f61-Ry-Mnb"/>
+                            <constraint firstItem="cJ9-9a-gwf" firstAttribute="top" secondItem="oer-tF-ii3" secondAttribute="bottom" constant="50" id="iLR-mP-pgd"/>
+                            <constraint firstItem="oer-tF-ii3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jTk-Be-U3q"/>
+                            <constraint firstItem="Y4q-aI-NsE" firstAttribute="top" secondItem="q17-rs-FJA" secondAttribute="bottom" constant="50" id="rc6-Xy-Ssc"/>
+                            <constraint firstItem="Y4q-aI-NsE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tbG-hX-ijI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="oer-tF-ii3" id="BTa-cv-WBL"/>
+                        <outlet property="label2" destination="cJ9-9a-gwf" id="ali-4c-mIl"/>
+                        <outlet property="label3" destination="q17-rs-FJA" id="5m6-NI-IwO"/>
+                        <outlet property="label4" destination="Y4q-aI-NsE" id="kA4-ii-f1a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
