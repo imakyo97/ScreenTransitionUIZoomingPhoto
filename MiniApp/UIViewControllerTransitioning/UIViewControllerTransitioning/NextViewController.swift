@@ -11,10 +11,21 @@ final class NextViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        transitioningDelegate = self
     }
 
     @IBAction private func didTapCloseButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+}
+
+extension NextViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return AnimationTransitioning(animationType: .present)
+    }
+
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return AnimationTransitioning(animationType: .dismiss)
     }
 }
 

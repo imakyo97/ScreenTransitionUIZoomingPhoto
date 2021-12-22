@@ -14,6 +14,7 @@
 		4767F376277308BF00241095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4767F375277308BF00241095 /* Assets.xcassets */; };
 		4767F379277308BF00241095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4767F377277308BF00241095 /* LaunchScreen.storyboard */; };
 		4767F38127730A5A00241095 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767F38027730A5A00241095 /* NextViewController.swift */; };
+		4767F38327730EF600241095 /* AnimationTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767F38227730EF600241095 /* AnimationTransitioning.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4767F378277308BF00241095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4767F37A277308BF00241095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4767F38027730A5A00241095 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		4767F38227730EF600241095 /* AnimationTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTransitioning.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				4767F36E277308BD00241095 /* SceneDelegate.swift */,
 				4767F370277308BD00241095 /* ViewController.swift */,
 				4767F38027730A5A00241095 /* NextViewController.swift */,
+				4767F38227730EF600241095 /* AnimationTransitioning.swift */,
 				4767F372277308BE00241095 /* Main.storyboard */,
 				4767F375277308BF00241095 /* Assets.xcassets */,
 				4767F377277308BF00241095 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4767F371277308BD00241095 /* ViewController.swift in Sources */,
+				4767F38327730EF600241095 /* AnimationTransitioning.swift in Sources */,
 				4767F38127730A5A00241095 /* NextViewController.swift in Sources */,
 				4767F36D277308BD00241095 /* AppDelegate.swift in Sources */,
 				4767F36F277308BD00241095 /* SceneDelegate.swift in Sources */,
